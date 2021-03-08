@@ -12,7 +12,7 @@ def home():
 
     return render_template("index.html", posts=blog_data)
 
-@app.route('/post/<id>')
+@app.route('/post/<bog_id>')
 def blog_post():
     blog_url = "https://api.npoint.io/5abcca6f4e39b4955965"
     blog_response = requests.get(blog_url)
